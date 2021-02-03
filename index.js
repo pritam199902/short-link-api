@@ -69,7 +69,7 @@ app.get("/", async (req, res) => {
         data: data,
       });
     }
-  });
+  }).sort('-date')
 });
 
 app.post("/submit", async (req, res) => {
